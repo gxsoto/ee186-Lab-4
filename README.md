@@ -13,4 +13,14 @@ in parallel with a diode. The resistor is needed to translate the current that i
 and consistent voltage since the resistor is of fixed value (vs the phtotdiode can produce varying
 current based on light exposure).
 
-3. 
+Part 3 - DAC
+
+1. The best resolution for DAC is 12 bits, so 2^12 - 4096. Using the equation, V_out - 9/4096(V_ref).
+
+2. Lower sampling rates makes the quality of the output waveform a little fuzzy and not nearly as accurate
+as using a higher samplign rate. Sawtooth waves sound louder than both sin and sqaure waves, but the 
+square waves sounded a little more high pitched compared to the sine and sawtooth waves. A capacitor is needed
+for the sake of not blowing up the headphones that are attached to the TRRS component. The capacitor can
+block DC voltage + filter out lower, fuzzy frequencies.
+
+ 
